@@ -69,3 +69,7 @@ print(peak_differences)
 df = pd.DataFrame(peak_differences)
 # saving the dataframe
 df.to_csv('peak_differences.csv')
+
+# find mean and sd
+arr = np.array(peak_differences)
+print('mean:', np.mean(arr), '|| sd:', np.std(arr))
